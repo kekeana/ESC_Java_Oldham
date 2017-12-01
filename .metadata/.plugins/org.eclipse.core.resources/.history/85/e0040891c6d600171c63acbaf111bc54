@@ -1,0 +1,28 @@
+
+public class MoreVariablesAndPrinting 
+{
+	public static void main(String[] args)
+		{
+			String myName, myEyes, myTeeth, myHair;
+			int myAge, myHeight, myWeight;
+			
+			myName =" Keana R. Oldham";
+			myAge = 17;    // not a lie
+			myHeight = 67; //inches
+			myWeight =122; //lbs
+			myEyes = "Blue hazel mix";
+			myTeeth = "White";
+			myHair= "Brown";
+			
+			System.out.println("Let's talk about " + myName + ".");
+			System.out.println("She's " + myHeight + " inches tall.");
+			System.out.println("She's " + myWeight + " pounds heavy.");
+			System.out.println("Actually, that's not too heavy.");
+			System.out.println("She's got a " + myEyes + " in her eyes and " + myHair + "hair.");
+			System.out.println("Her teeth are usually " + myTeeth + ", depending on the coffee,");
+			
+			System.out.println("If I add " + myAge +"," + myHeight + ", and" + myWeight + ", I get " 
+					+ (myAge + myHeight + myWeight) + ".");
+			
+			}
+}
