@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class UserInputOfData 
+{
+
+	public static void main(String[] args) 
+	{
+		Scanner keyboard = new Scanner(System.in);
+		
+		String name1, name2, login; 
+		int grade, ID;
+		double GPA;
+		
+		System.out.println("Please enter the following information so I can help you sell it for profit!");
+		
+		System.out.println("");
+		
+		System.out.println("First name: " + name1 );
+		name1= keyboard.next();
+		
+		
+		
+
+	}
+
+}
