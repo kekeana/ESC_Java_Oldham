@@ -18,6 +18,12 @@ public class DumbCalculator
 		
 		System.out.println("What is the second number?");
 		num2 = keyboard.nextDouble();
+		
+		System.out.println("What is the third number?");
+		num3 = keyboard.nextDouble();
+		
+		System.out.println("The average of the three numbers is " + (num1 + num2 + num3)/3 );
+	
 
 	}
 
