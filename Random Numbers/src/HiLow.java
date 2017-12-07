@@ -24,7 +24,7 @@ public class HiLow
 			System.out.println("Sorry you are too high. I was thinking of " + x);
 		
 		if(response == x)
-			System.out.println("You gyessed it! What are the odds?!?");
+			System.out.println("You guessed it! What are the odds?!?");
 		
 		
 	}
