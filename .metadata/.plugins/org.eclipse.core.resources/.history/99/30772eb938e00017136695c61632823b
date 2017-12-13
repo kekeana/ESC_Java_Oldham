@@ -18,7 +18,7 @@ public class AddingValuesForLoop
 			sum = n + sum;
 		}
 		
-		System.out.println("");
+		System.out.print("");
 		System.out.print("The sum is " + sum );
 		
 		keyboard.close();

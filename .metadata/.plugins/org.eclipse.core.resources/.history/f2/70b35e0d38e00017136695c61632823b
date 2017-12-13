@@ -7,7 +7,7 @@ public class AddingValuesForLoop
 		Scanner keyboard = new Scanner(System.in);
 		
 		int input;
-		int sum = 0;
+
 		
 		System.out.print("Number: ");
 		input = keyboard.nextInt();
@@ -15,10 +15,10 @@ public class AddingValuesForLoop
 		for (int n = 1; n <= input; n = n +1)
 		{
 			System.out.print(n + " " );
-			sum = n + sum;
+			int sum = n +1;
 		}
 		
-		System.out.println("");
+		System.out.print("");
 		System.out.print("The sum is " + sum );
 		
 		keyboard.close();
