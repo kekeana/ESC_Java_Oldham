@@ -24,7 +24,7 @@ public class FillInMethods
 		System.out.println();
 		System.out.println("Now we take the absolute value of a number.");
 		int x, y;
-		x = -15;
+		x = -10;
 		y= abso(x);
 		System.out.println("|" + x + "| = " + y );
 

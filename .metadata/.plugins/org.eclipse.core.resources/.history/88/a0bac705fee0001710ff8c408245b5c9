@@ -9,8 +9,8 @@ public class FillInMethods
 
 		System.out.println();
 		System.out.println("I'm going to get a random character from A-Z");
-		char c ;
-		c = randchar();
+		char c = '!';
+		randchar(7);
 		System.out.println("The character is: " + c );
 
 		System.out.println();
@@ -23,9 +23,9 @@ public class FillInMethods
 
 		System.out.println();
 		System.out.println("Now we take the absolute value of a number.");
-		int x, y;
-		x = -15;
-		y= abso(x);
+		int x, y = 99;
+		x = -10;
+		abso(x);
 		System.out.println("|" + x + "| = " + y );
 
 		System.out.println();
@@ -46,14 +46,13 @@ public class FillInMethods
 	}
 
 
-	public static char randchar( )
+	public static char randchar( int numval )
 
 	{
 		// chooses a random character in the range "A" to "Z"
 		
 		char charval;
-		int numval;
-		
+
 		// pick a random number from 0 to 25
 		numval = (int)(Math.random()*26);
 		// now add that offset to the value of the letter 'A'
