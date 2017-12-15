@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class MethodPass 
+{
+	public static void main(String[] args)
+	{
+
+		
+		int answer;
+		boolean response;
+		
+		answer = check();
+		System.out.print("Pick a number: " + answer);
+		
+		
+	}
+	
+	public static boolean check()
+	{
+		Scanner keyboard = new Scanner(System.in);
+		
+		int input;
+		
+		
+		
+	}
+}
