@@ -11,7 +11,7 @@ public class DumbCalculator
 		
 		System.out.println("Let's find the average of a few numbers... ");
 		
-		System.out.println("");
+		System.out.println();
 		
 		System.out.println("What is the first number?");
 		num1 = keyboard.nextDouble();

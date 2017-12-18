@@ -4,6 +4,10 @@ public class AreaCalculator
 {
 	public static void main(String[] args)
 	{
+		
+		Scanner keyboard = new Scanner(System.in);
+		int shape;
+		
 		System.out.println("Shape Area Calculator (c) 2018 Keana Oldam ECS");
 		System.out.println();
 		System.out.println(" 1) Triangle");
@@ -11,9 +15,37 @@ public class AreaCalculator
 		System.out.println(" 3) Square");
 		System.out.println(" 4) Circle");
 		System.out.println(" 5) Quit");
+		
+		System.out.println("Which Shape: ");
+		shape = keyboard.nextInt();
+		
+		if (shape ==1)
+		{
+			triangle(shape);
+		}
+		
+		if (shape ==2)
+		{
+			rectangle(shape);
+		}
+		
+		if (shape ==3)
+		{
+			square(shape);
+		}
+		
+		if (shape ==4)
+		{
+			circle(shape);
+		}
+		
+		if (shape ==5)
+		{
+			quit(shape);
+		}
 	}
 	
-	public static void triangle(int choice)
+	public static void triangle(int shape)
 	{
 		Scanner keyboard = new Scanner(System.in);
 		
@@ -27,31 +59,72 @@ public class AreaCalculator
 		
 		
 		area=.5*base*height;
-		System.out.print("The area is " + area);
+		System.out.println("The area is " + area);
 		
 		
 		System.out.print("In the way Will Turner says, Goodbye!!");
 		
 	}
 	
-	public static void rectangle(int choice)
+	public static void rectangle(int shape)
 	{
 		Scanner keyboard = new Scanner(System.in);
+		
+		int length, width;
+		double area;
+		
+		System.out.print("Length: ");
+		length = keyboard.nextInt();
+		System.out.print("Width: ");
+		width = keyboard.nextInt();
+		
+		area = length * width;
+		System.out.println("The area is " + area);
+		
+		
+		System.out.print("In the way Will Turner says, Goodbye!!");
+		
 	}
 	
-	public static void square(int choice)
+	public static void square(int shape)
 	{
 		Scanner keyboard = new Scanner(System.in);
+		
+		int side;
+		double area;
+		
+		System.out.print("Side Length: ");
+		side = keyboard.nextInt();
+		
+		area = side*side;
+		
+		System.out.println("The area is " + area);
+		
+		System.out.print("In the way Will Turner says, Goodbye!!");
+		
 	}
 	
-	public static void cirlce(int choice)
+	public static void circle(int shape)
 	{
 		Scanner keyboard = new Scanner(System.in);
+		
+		int radius;
+		double area;
+		
+		System.out.print("Radius: ");
+		radius = keyboard.nextInt();
+		
+		area = radius * radius * Math.PI;
+		System.out.println("The area is " + area);
+		
+		System.out.print("In the way Will Turner says, Goodbye!!");
+		
 	}
 	
 	public static void quit(int choice)
 	{
 		
+		System.out.print("Well what does that say abut you... Goodbye!!");
 	}
 
 }

@@ -1,0 +1,105 @@
+import java.util.Scanner;
+
+public class AreaCalculator
+{
+	public static void main(String[] args)
+	{
+		
+		Scanner keyboard = new Scanner(System.in);
+		int shape;
+		
+		System.out.println("Shape Area Calculator (c) 2018 Keana Oldam ECS");
+		System.out.println();
+		System.out.println(" 1) Triangle");
+		System.out.println(" 2) Rectangle");
+		System.out.println(" 3) Square");
+		System.out.println(" 4) Circle");
+		System.out.println(" 5) Quit");
+		
+		System.out.println("Which Shape: ");
+		shape = keyboard.nextInt();
+	}
+	
+	public static void triangle(int shape)
+	{
+		Scanner keyboard = new Scanner(System.in);
+		
+		int base, height;
+		double area;
+		
+		System.out.print("Base: ");
+		base= keyboard.nextInt();
+		System.out.print("Height: ");
+		height= keyboard.nextInt();
+		
+		
+		area=.5*base*height;
+		System.out.print("The area is " + area);
+		
+		
+		System.out.print("In the way Will Turner says, Goodbye!!");
+		
+	}
+	
+	public static void rectangle(int choice)
+	{
+		Scanner keyboard = new Scanner(System.in);
+		
+		int length, width;
+		double area;
+		
+		System.out.print("Length: ");
+		length = keyboard.nextInt();
+		System.out.print("Width: ");
+		width = keyboard.nextInt();
+		
+		area = length * width;
+		System.out.print("The area is " + area);
+		
+		
+		System.out.print("In the way Will Turner says, Goodbye!!");
+		
+	}
+	
+	public static void square(int choice)
+	{
+		Scanner keyboard = new Scanner(System.in);
+		
+		int side;
+		double area;
+		
+		System.out.print("Side Length: ");
+		side = keyboard.nextInt();
+		
+		area = side*side;
+		
+		System.out.print("The area is " + area);
+		
+		System.out.print("In the way Will Turner says, Goodbye!!");
+		
+	}
+	
+	public static void cirlce(int choice)
+	{
+		Scanner keyboard = new Scanner(System.in);
+		
+		int radius;
+		double area;
+		
+		System.out.print("Radius: ");
+		radius = keyboard.nextInt();
+		
+		area = radius * radius * Math.PI;
+		System.out.print("The area is " + area);
+		
+		System.out.print("In the way Will Turner says, Goodbye!!");
+		
+	}
+	
+	public static void quit(int choice)
+	{
+		
+		System.out.print("Well what does that say abut you... Goodbye!!");
+	}
+
+}
