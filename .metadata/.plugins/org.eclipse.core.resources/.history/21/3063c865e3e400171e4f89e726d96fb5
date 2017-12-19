@@ -20,18 +20,16 @@ public class FindingPrimes
 		System.out.print("High end: ");
 		high = keyboard.nextInt();
 		
-		for(int n = low; n<= high; n++)
+
+		
+		if (check)
 		{
-			boolean check = primes(n);
-			
-			if (check)
-			{
-				System.out.println(n + "<");
-			}
-			else
-			{
-				System.out.println(n);
-			}
+			primes(n);
+			System.out.print(n + "<");
+		}
+		else
+		{
+			System.out.println(n);
 		}
 		
 	}
